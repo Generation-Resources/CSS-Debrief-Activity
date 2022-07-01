@@ -1,27 +1,31 @@
-
+* {
+  box-sizing: border-box;
+}
 body {
-
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(whitesmoke, rgb(35, 47, 58));
 }
 
 /* Navigation Styles */
 nav ul {
-	list-style-type: none;
-	overflow: hidden;
-	background-color: #0f1337;
-	display: table;
-	width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #0f1337;
+  display: table;
+  width: 100%;
 }
 nav li {
-	display: table-cell
+  display: table-cell;
 }
 li a {
-	display: block;
-	color: white;
-	padding: 30px 30px 30px 30px;
-	text-decoration: none;
+  display: block;
+  color: white;
+  padding: 30px;
+  text-decoration: none;
+  text-align: center;
 }
 li a:hover {
-	background-color: rgb(40, 39, 39);
+  background-color: rgb(40, 39, 39);
 }
 
 /* Header Styles */
@@ -33,76 +37,125 @@ h1 {
 	color:
 } */
 
-
 /* Main Page Content Styles */
 
 section {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 
-	width: 80%;
-	margin: auto;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
 }
-.center-title {
 
+.center-title {
+  text-align: center;
 }
 
 /* About Section Styles */
 #about-sec {
-	display: flex;
-
+  display: flex;
+  flex-direction: column;
 }
+
+#about-sec h2 {
+  font-size: 1.95em;
+}
+
+#about-sec #about-blurb {
+  padding: 02.5em;
+}
+
 #about-sec div {
-	display: inline-flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-evenly;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 figure {
-	display: flex;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
 
+figcaption {
+  font-style: italic;
+  background-color: rgba(35, 47, 58);
+  color: whitesmoke;
+  padding: 0.25em;
+  opacity: 0.5;
+  font-size: 0.85em;
 }
 
 /* Aside Styles */
 aside {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  border: 4px double black;
+  margin: 1em 0;
+  color: rgba(35, 47, 58, 0.05);
+  background-color: rgba(35, 47, 58, 0.05);
+}
 
+aside p {
+  font-weight: 600;
+  font-size: 1.25em;
+  background-color: rgb(35, 47, 58);
+  color: whitesmoke;
+  padding: 0.5em;
+  text-transform: uppercase;
+  border-bottom: 4px double rgba(0, 0, 0, 0.77);
+  opacity: 0.6;
+}
+
+aside ul {
+  font-size: 0.9em;
+  margin: 1em;
+  padding: 0 0.75em 0 1em;
+}
+
+aside ul li a {
+  text-align: justify;
+  padding: 0%;
+  color: rgb(35, 47, 58);
+  text-decoration: underline;
 }
 
 /* Table - Concert Schedule Styles */
 #concert-schedule-sec {
-	max-width: 940px;
-	margin: 0 auto;
-	height: max-content;
-	}
+  max-width: 940px;
+  margin: 0 auto;
+  height: max-content;
+  color: rgb(255, 54, 154);
+}
 
 /* Form - Ticket Form Styles */
 form {
-	width: 35vw;
-	margin: auto;
-  }
+  width: 35vw;
+  margin: auto;
+}
 
-input[type="text"], input[type="number"] {
-min-height: 15px;
-border-radius: 5px;
-border:1px solid #cccccc;
+input[type="text"],
+input[type="number"] {
+  min-height: 15px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
 }
 
 input[type="radio"] {
-margin-left: 12px;
+  margin-left: 12px;
 }
 
 th {
-border: 2px solid #8c6b48;
+  border: 2px solid #8c6b48;
 }
 
 table {
-text-align: center;
-margin: 20px auto;
+  text-align: center;
+  margin: 20px auto;
 }
 
 td {
-border: 2px solid #8c6b48;
-width: 300px;
+  border: 2px solid #8c6b48;
+  width: 300px;
 }
